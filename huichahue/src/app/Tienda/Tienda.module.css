@@ -1,0 +1,14 @@
+.container h1 {
+  font-size: 4rem;
+  text-align: center;
+  font-family: bangers;
+}
+
+.container_items {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 0 20px;
+  margin: 0 7rem;
+  border-radius: 80px;
+}

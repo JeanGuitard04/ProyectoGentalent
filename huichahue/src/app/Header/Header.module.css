@@ -1,0 +1,46 @@
+.header {
+  position: sticky;
+  z-index: 1;
+  top: 0;
+  /* Fijamos esta barra para que aparezca siempre que hacemos scroll */
+}
+.barra_nav {
+  padding: 2rem 2rem 0.8rem 2rem;
+  /* Generamos un margen interno para que el logo no tope arriba */
+  background-color: rgba(0, 0, 0, 0.9);
+  height: 9rem;
+  width: 100%;
+  /* Creamos un fondo negro y fijamos el espacio que ocupara */
+  display: flex;
+  justify-content: space-between;
+  /* Centramos y ubicamos con el mismo espacio  alrededor para hacerlo responsivo */
+  align-items: flex-end;
+  /* Dejamos los items en el final de nuestro navbar */
+}
+
+.icon {
+  width: 3rem;
+  height: 3rem;
+  color: #d9902c;
+  stroke-width: 1.5;
+}
+
+.botones {
+  /* Diseño visual de botones */
+  background-color: rgba(0, 0, 0, 0.509);
+  border: #d9902c;
+  border-radius: 2rem;
+  border-style: groove;
+  width: 7rem;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  font-family: Bangers;
+  font-weight: 400;
+  font-size: 20px;
+  /* Diseño visual de botones */
+}
+
+.botones:hover {
+  color: #d9902c;
+  /* Cambio de color para cursor */
+}

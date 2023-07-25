@@ -1,0 +1,97 @@
+.contenedores {
+  background-color: rgba(255, 255, 255, 0.55);
+  overflow-x: hidden;
+}
+
+.titulosection1 {
+  font-size: 40px;
+  font-family: "Bangers";
+  text-align: center;
+  padding: 30px;
+  padding-bottom: 10px;
+}
+
+.sobrenosotros {
+  padding: 40px;
+  margin: 0 10%;
+}
+
+.sobrenosotros p {
+  font-size: 30px;
+  font-family: "Open Sans";
+}
+
+.nuestrahistoria,
+.mundoconsciente,
+.mision,
+.vision {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding-bottom: 40px;
+}
+
+.titulosection2 {
+  font-size: 40px;
+  font-family: "Bangers";
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+.nuestroscolaboradores {
+  background-color: rgba(255, 255, 255, 0.405);
+  padding: 30px;
+}
+
+.btncolaboradores {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding-bottom: 40px;
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .nuestrahistoria,
+  .mundoconsciente,
+  .mision,
+  .vision {
+    flex-direction: row;
+  }
+
+  .video_nuestrahistoria,
+  .image_mundoconsciente,
+  .image_mision,
+  .image_vision {
+    width: 50%;
+  }
+
+  .text_nuestrahistoria,
+  .text_mundoconsciente,
+  .text_mundoconsciente,
+  .text_mision,
+  .text_vision {
+    width: 50%;
+  }
+}
+
+@media (max-width: 767px) {
+  .nuestrahistoria,
+  .mundoconsciente,
+  .mision,
+  .vision {
+    flex-direction: column;
+  }
+
+  .video_nuestrahistoria,
+  .image_mundoconsciente,
+  .image_mision,
+  .image_vision,
+  .text_nuestrahistoria,
+  .text_mundoconsciente,
+  .text_mundoconsciente,
+  .text_mision,
+  .text_vision {
+    width: 100%;
+  }
+}

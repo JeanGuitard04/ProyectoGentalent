@@ -1,0 +1,170 @@
+.contenedor {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px 0;
+  height: auto;
+}
+
+/************************************ INICIO  BARRA PROGRESO ************************************/
+
+.pasos {
+  display: flex;
+  gap: 25px;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.contenedorpasos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.circleactive {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  width: 50px;
+  color: white;
+  font-size: 22px;
+  font-family: Bangers;
+  border-radius: 50%;
+  transition: all 200ms ease;
+  transition-delay: 0s;
+  transition-delay: 100ms;
+  background: rgb(217, 144, 44);
+}
+
+.infoactive {
+  font-family: Bangers;
+  color: rgb(217, 144, 44);
+}
+.linea_puntos {
+  position: absolute;
+  height: 2px;
+  width: 15%;
+  z-index: -1;
+  border-top: 2.95px dotted;
+  color: rgb(128, 128, 128);
+}
+
+/************************************ FIN BARRA PROGRESO ************************************/
+
+/************************************ INICIO CARRITO ************************************/
+.informacion {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  align-items: center;
+}
+
+.contactopedido {
+  display: flex;
+  gap: 0 100px;
+  font-size: 1.5rem;
+}
+
+.contenedorinfo {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  gap: 20px 0;
+  color: black;
+}
+
+.contenedor_tarjetas {
+  display: flex;
+  flex-direction: column;
+  gap: 30px 0;
+  font-family: sans-serif;
+}
+
+.tarjeta {
+  width: 100%;
+  height: auto;
+  border: 1px solid black;
+  border-radius: 20px;
+  background-color: rgba(217, 145, 44, 0.763);
+  padding: 10px;
+  font-size: 1rem;
+}
+
+.tarjeta_datos {
+  display: flex;
+  width: 100%;
+  height: auto;
+  border: 1px solid black;
+  border-radius: 20px;
+  background-color: rgba(217, 145, 44, 0.763);
+  padding: 10px;
+}
+
+.datos_bancarios {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 1rem;
+}
+
+.circleproduct {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 25px;
+  width: 25px;
+  color: white;
+  font-size: 15px;
+  font-family: Bangers;
+  border-radius: 50%;
+  background: rgb(128, 128, 128);
+}
+.resumen {
+  border: 1px solid black;
+  border-radius: 10px;
+  width: 100%;
+}
+.card {
+  display: flex;
+}
+.infoproducto {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.8rem;
+  font-family: sans-serif;
+}
+.contenedortotal {
+  display: flex;
+  padding: 15px 5px 5px 0;
+  justify-content: end;
+  font-size: 1rem;
+  font-family: sans-serif;
+  gap: 20px;
+}
+.total {
+  display: flex;
+  flex-direction: column;
+}
+
+.botones_carrito {
+  display: flex;
+  justify-content: end;
+  gap: 40px;
+  margin: 20px 0;
+}
+
+.botoness {
+  padding: 8px 25px;
+  background: rgb(217, 144, 44);
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 16px;
+  font-family: Bangers;
+  font-weight: 400;
+  cursor: pointer;
+  align-self: self-end;
+}
