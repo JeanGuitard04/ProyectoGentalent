@@ -11,7 +11,7 @@ export default function Home() {
       </div>
 
       <div className={styles.rectangulo}>
-        <p>PRODUCTOS DESTACADOS</p>
+        <p>PRODUCTOS DDESTACADOS</p>
       </div>
 
       <div className={styles.fotosProductos}>
