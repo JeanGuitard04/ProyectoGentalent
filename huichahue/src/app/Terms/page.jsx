@@ -1,6 +1,6 @@
 import styles from "../styles/Terms.module.css";
 
-const Terms = () => {
+export default function Terms() {
   return (
     <section className={styles.sec1}>
       <br />
@@ -86,6 +86,4 @@ const Terms = () => {
       <br />
     </section>
   );
-};
-
-export default Terms;
+}
