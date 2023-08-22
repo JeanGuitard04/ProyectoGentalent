@@ -24,8 +24,8 @@ export function Footer() {
             <ul>
               <Link href={"/"}>Inicio</Link>
               <Link href={"/Tienda"}>Tienda</Link>
-              <Link href={"/"}>Termines y condiciones</Link>
-              <Link href={"/Contacto"}>Contáctanos</Link>
+              <Link href={"/Terms"}>Términos y condiciones</Link>
+              <Link href={"/Form"}>Contáctanos</Link>
             </ul>
           </div>
 
@@ -37,8 +37,9 @@ export function Footer() {
                 <FontAwesomeIcon icon={faInstagram} style={{ width: "22px" }} />
               </Link>{" "}
               <Link
-                href={"https://web.facebook.com/cerveza.huichahue/?_rdc=1&_rdr"}
-              >
+                href={
+                  "https://web.facebook.com/cerveza.huichahue/?_rdc=1&_rdr"
+                }>
                 <FontAwesomeIcon icon={faFacebook} style={{ width: "22px" }} />
               </Link>{" "}
               <FontAwesomeIcon icon={faWhatsapp} style={{ width: "22px" }} />
@@ -59,10 +60,11 @@ export function Footer() {
           <div className={styles.footer_col}>
             <h4>SOBRE NOSOTROS</h4>
             <ul>
-              <Link href={"/Nosotros"}>Nuestra Historia</Link>
-              <Link href={"/Nosotros"}>Vision</Link>
-              <Link href={"/Nosotros"}>Mision</Link>
-              <Link href={"/Nosotros"}>Mundo Consciente</Link>
+              <Link href={"/Nosotros#nuestraHistoria"}>Nuestra Historia</Link>
+              <Link href={"/Nosotros#MundoConsciente"}>Mundo Consciente</Link>
+              <Link href={"/Nosotros#mision"}>Misión</Link>
+
+              <Link href={"/Nosotros#vision"}>Visión</Link>
             </ul>
           </div>
           <div className={styles.footer_col}>
