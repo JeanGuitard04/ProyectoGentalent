@@ -2,7 +2,6 @@ import Image from "next/image";
 import styles from "./Producto.module.css";
 
 // Aqui definimos el componente Producto y le pasamos los props necesarias para
-
 function Producto({
   id,
   nombre,

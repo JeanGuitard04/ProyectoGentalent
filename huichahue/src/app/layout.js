@@ -1,14 +1,16 @@
-import "./globals.css";
+import { Connect, connect } from "react-redux";
+import { setProducts as setProductsAction } from "@/actions";
 import { Header } from "./Header";
 import { Footer } from "./components/Footer";
 import Image from "next/image";
+import "./globals.css";
 
 export const metadata = {
   title: "Cervezas Huichahue",
   description: "Cervezas artesanales, Cervezas Huichahue, Cervezas ,",
 };
 
-export default function RootLayout({ children }) {
+function RootLayout({ children }) {
   return (
     <html lang="es">
       <body>
@@ -28,3 +30,13 @@ export default function RootLayout({ children }) {
     </html>
   );
 }
+
+const mapStateToProps = (state) => ({
+  cervezas: state.cervezas,
+});
+
+const mapDispatchToProps = (dispatch) => ({
+  setProducts: (value) => dispatch(setProductsAction),
+});
+
+export default connect(mapStateToProps, mapDispatchToProps)(RootLayout);
