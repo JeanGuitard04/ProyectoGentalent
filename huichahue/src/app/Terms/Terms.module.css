@@ -6,7 +6,7 @@
   padding: 0;
   font-size: 62.5%;
 }
-
+/* comentario 
 .bodyterms {
   background-image: url("../IMAGENES/background.jpg");
   background-color: rgba(255, 255, 255, 0.55);
@@ -14,6 +14,7 @@
   background-size: cover;
   background-position: center;
 }
+*/
 .sec1 {
   background-color: rgba(255, 255, 255, 0.55);
 }
@@ -28,6 +29,7 @@
   flex-wrap: wrap;
 }
 
+/* comentario 
 ul {
   list-style: none;
   text-align: center;
@@ -35,3 +37,4 @@ ul {
   font-size: 18px;
   color: #ffffff;
 }
+*/
