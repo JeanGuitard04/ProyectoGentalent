@@ -1,9 +1,12 @@
+"use client";
 import { Connect, connect } from "react-redux";
 import { setProducts as setProductsAction } from "@/actions";
 import { Header } from "./Header";
 import { Footer } from "./components/Footer";
 import Image from "next/image";
 import "./globals.css";
+import { useEffect } from "react";
+import { getProduct } from "@/api";
 
 export const metadata = {
   title: "Cervezas Huichahue",
@@ -11,6 +14,15 @@ export const metadata = {
 };
 
 function RootLayout({ children }) {
+  /* Logica para consumir API con Axios...*/
+  useEffect(() => {
+    const fetchProducts = async () => {
+      await getProduct();
+    };
+
+    fetchProducts();
+  }, []);
+
   return (
     <html lang="es">
       <body>
@@ -36,7 +48,7 @@ const mapStateToProps = (state) => ({
 });
 
 const mapDispatchToProps = (dispatch) => ({
-  setProducts: (value) => dispatch(setProductsAction),
+  setCervezas: (value) => dispatch(setCervezasAction),
 });
 
-export default connect(mapStateToProps, mapDispatchToProps)(RootLayout);
+export default RootLayout;
